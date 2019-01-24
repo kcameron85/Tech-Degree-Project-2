@@ -11,6 +11,144 @@
 
 * {
 	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
 	margin:0;
 	padding:0;
+	line-height: 1.5;
+}
+
+.clearfix:after {
+	content:"";
+	display:table;
+	clear: both;
+}
+
+header, main, footer {
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*================================*/
+/*Header Styles*/
+/*================================*/
+
+header, footer { /*Also styles footer element*/
+	background-color: #fafafa;
+}
+
+.header-wrapper,
+.main-wrapper,
+.footer-wrapper { /*Also styles main and footer element*/
+	margin: 0 1rem;
+}
+
+h1 {
+	padding: 1rem;
+}
+
+.main-nav li {
+	display: block;
+	padding: .75rem 0 .75rem;
+	margin: .3125rem 0;
+	background-color: #fff;
+}
+
+.main-nav li,
+footer li {
+	list-style-type: none;
+}
+
+.main-nav a {
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+header img {
+	width: 75%;
+	padding: 2.5rem 0 1.75rem 0;
+}
+
+header p {
+	padding: 0 0 2.5rem 0;
+}
+
+/*================================*/
+/*Main Styles*/
+/*================================*/
+
+main h2,
+footer h2 { /*Also styles footer element*/
+	font-size: 1.25rem;
+}
+
+main h3 {
+	font-size: 1.5rem;
+	padding: 1.5rem 0 1rem 0;
+}
+
+main h2,
+footer h2{ /*Also styles footer element*/
+	text-transform: uppercase;
+	padding: 3rem 0;
+}
+
+main p {
+	padding: 0 1rem 1.75rem 1rem;
+}
+
+/*================================*/
+/*Footer Styles*/
+/*================================*/
+
+footer li {
+	font-weight: bold;
+}
+
+footer p {
+	padding-bottom: 1.75rem;
+}
+
+.contact-nav {
+	padding: 0 0 3rem 0;
+}
+
+.contact-nav li {
+	padding: .3125rem 0;
+}
+
+.contact-nav a {
+	text-decoration: none;
+	color: #000;
+}
+
+.contact-nav span {
+	padding-right: .625rem;
+	font-weight: normal;
+}
+
+.footer-nav {
+	padding: 2rem 0;
+	border-top: 1px solid #e7e7e7;
+}
+
+.footer-nav li {
+	display: inline-block;
+	text-align: left;
+	float: left;
+	width: 50%;
+}
+
+.footer-nav li:last-of-type {
+	text-align: right;
+}
+
+.footer-nav li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
 }
