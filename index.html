@@ -5,16 +5,19 @@
 		<meta name="viewport" content="device=device-width, initial-scale=1.0">
 		<title>Kyle's Portfolio</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Aleo:400,700" rel="stylesheet">
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
 		<header id="home">
 			<div class="header-wrapper clearfix">
+
 				<h1>Kyle Cameron</h1>
 				<nav>
 					<ul class="main-nav">
 						<li><a href="#home">Home</a></li>
 						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#skills">Skills</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
@@ -22,47 +25,62 @@
 				<img src="images/responsive-layout-profile.png" alt="This is a profile image for this responsive layout">
 
 				<p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-				</div>
+
+			</div>
 		</header>
-	
-		<main class="clearfix" id="portfolio">
+
+		<main id="portfolio">
 			<div class="main-wrapper">
-				<h2>Portfolio</h2>
+				<div class="portfolio clearfix">
+					<h2>Portfolio</h2>
 
-				<div class="col">
-					<img src="images/portfolio-1.png" alt="This is an image for a marketing image, its blue and has one graphic.">
-					<h3>Marketing Page</h3>
-					<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+					<div class="col">
+						<img src="images/portfolio-1.png" alt="This is an image for a marketing image, its blue and has one graphic.">
+						<h3>Marketing Page</h3>
+						<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+					</div>
+
+					<div class="col">
+						<img src="images/portfolio-2.png" alt="This is an image for a search page, its yellow and has one graphic.">
+						<h3>Search Page</h3>
+						<p>This project searches through a specific database to find information that the user is trying to look up.</p>
+					</div>
+
+					<div class="col">
+						<img src="images/portfolio-3.png" alt="This is an image for a travel app, its blue and has one graphic.">
+						<h3>Travel App</h3>
+						<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+					</div>
+
+					<div class="col">
+						<img src="images/portfolio-4.png" alt="This is an image for a favorite spots page, its green and has one graphic.">
+						<h3>Map of Favorite Spots</h3>
+						<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+					</div>
+
+					<div class="col">
+						<img src="images/portfolio-5.png" alt="This is an image for a photo gallery page, its purple and has one graphic.">
+						<h3>Photo Gallery</h3>
+						<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+					</div>
+
+					<div class="col">
+						<img src="images/portfolio-6.png" alt="This is an image for a calculator app, its grey and has one graphic.">
+						<h3>Calculator</h3>
+						<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+					</div>
 				</div>
 
-				<div class="col">
-					<img src="images/portfolio-2.png" alt="This is an image for a search page, its yellow and has one graphic.">
-					<h3>Search Page</h3>
-					<p>This project searches through a specific database to find information that the user is trying to look up.</p>
-				</div>
+				<div id="skills" class="skills">
+					<h2>Skills</h2>
 
-				<div class="col">
-					<img src="images/portfolio-3.png" alt="This is an image for a travel app, its blue and has one graphic.">
-					<h3>Travel App</h3>
-					<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-				</div>
+					<p>Becoming a wed designer/developer is a continuous journey of learning and it is likely that I will continue to learn new skills throughout my career. I have become proficient in core technologies/languages that are essential to coding websites in both a responsive and semantically relevant way. Below is a list of the languages that I have learned so far:</p>
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+						</ul>
 
-				<div class="col">
-					<img src="images/portfolio-4.png" alt="This is an image for a favorite spots page, its green and has one graphic.">
-					<h3>Map of Favorite Spots</h3>
-					<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-				</div>
-
-				<div class="col">
-					<img src="images/portfolio-5.png" alt="This is an image for a photo gallery page, its purple and has one graphic.">
-					<h3>Photo Gallery</h3>
-					<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-				</div>
-
-				<div class="col">
-					<img src="images/portfolio-6.png" alt="This is an image for a calculator app, its grey and has one graphic.">
-					<h3>Calculator</h3>
-					<p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
 				</div>
 			</div>
 		</main>
@@ -78,7 +96,7 @@
 					<li><a href="mailto:email@yourself.com"><span>Email</span> email@yourself.com</a></li>
 				</ul>
 
-				<div class="footer-nav clearfix">
+				<div class="nav footer-nav clearfix">
 					<ul>
 						<li>Kyle Cameron</li>
 					</ul>
@@ -86,6 +104,7 @@
 						<li class="mobile-nav"><a href="#home">Back to Top</a></li>
 						<li class="desktop-nav"><a href="#home">Home</a></li>
 						<li class="desktop-nav"><a href="#portfolio">Portfolio</a></li>
+						<li class="desktop-nav"><a href="#skills">Skills</a></li>
 						<li class="desktop-nav"><a href="#contact">Contact</a></li>
 					</ul>
 				</div>

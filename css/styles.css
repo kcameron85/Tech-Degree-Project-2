@@ -23,12 +23,23 @@
 	clear: both;
 }
 
+
+body {
+	background-color: #457db2;
+}
+
 header, main, footer {
 	text-align: center;
 }
 
 img {
 	max-width: 100%;
+}
+
+.main-nav a:hover,
+.footer-nav a:hover,
+.contact-nav a:hover {
+	color: rgba(245, 245, 254, .4);
 }
 
 /*================================*/
@@ -39,18 +50,24 @@ header {
 	padding: 1rem 0 2.75rem 0;
 }
 
-header, footer { /*Also styles footer element*/
-	background-color: #fafafa;
-}
-
 .header-wrapper,
 .main-wrapper,
 .footer-wrapper { /*Also styles main and footer element*/
-	margin: 0 1.25rem;
+	padding: 0 1.25rem;
 }
 
 h1 {
 	padding-bottom: 1rem;
+}
+
+h1,
+header p,
+footer h2,
+footer p,
+footer li,
+.contact-nav a,
+.footer-nav a{
+	color: whitesmoke;
 }
 
 .main-nav li {
@@ -60,13 +77,17 @@ h1 {
 	background-color: #fff;
 }
 
+.main-nav a {
+	color: #000;
+}
+
 .main-nav li,
-footer li {
+footer li,
+.skills li{ /*Also styles footer element*/
 	list-style-type: none;
 }
 
 .main-nav a {
-	color: #000;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: bold;
@@ -81,6 +102,12 @@ header img {
 /*Main Styles*/
 /*================================*/
 
+.main-wrapper {
+	background-color: #fff;
+	width: 100%;
+	padding-bottom: 1.5rem;
+}
+
 main h2,
 footer h2 { /*Also styles footer element*/
 	font-size: 1.25rem;
@@ -89,6 +116,8 @@ footer h2 { /*Also styles footer element*/
 main h3 {
 	font-size: 1.5rem;
 	padding: 1.5rem 0 1rem 0;
+	font-family: 'Aleo', serif;
+	letter-spacing: 2px;
 }
 
 main h2,
@@ -123,7 +152,6 @@ footer p {
 
 .contact-nav a {
 	text-decoration: none;
-	color: #000;
 }
 
 .contact-nav span {
@@ -159,7 +187,10 @@ footer p {
 .footer-nav li a{
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #000;
+}
+
+.skills h2 {
+	padding-top: 1.25rem;
 }
 
 
@@ -168,6 +199,12 @@ footer p {
 /*================================*/
 
 @media (min-width: 768px) {
+
+	.main-wrapper {
+		padding-left: .625rem;
+		padding-right: .625rem;
+		padding-bottom: 2.75rem;
+	}
 
 	h1 {
 		padding-bottom: 0;
@@ -181,6 +218,10 @@ footer p {
 		display: inline-block;
 		padding: .625rem 1rem;
 		background-color: transparent;
+	}
+
+	.main-nav a {
+		color: whitesmoke;
 	}
 
 	header {
@@ -197,10 +238,6 @@ footer p {
 		float: right;
 		max-width: 60%;
 		text-align: start;
-	}
-
-	.main-wrapper {
-		margin: 0 .625rem;
 	}
 
 	.col {
@@ -230,4 +267,56 @@ footer p {
 		padding-right: 0;
 	}
 
+}
+
+
+@media (min-width: 1024px) {
+
+	main {
+		margin: 0 1.625rem;
+	}
+
+	.header-wrapper,
+	.main-wrapper,
+	.footer-wrapper {
+		max-width: 1024px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.main-wrapper {
+		padding: 0 1rem 2.75rem;
+	}
+
+	header {
+		padding: 3rem 2rem;
+	}
+
+	header h1 {
+		width: 50%;
+		float: left;
+		text-align: left;
+	}
+
+	header ul {
+		width: 50%;
+		float: left;
+		text-align: right;
+	}
+
+	.main-nav li:last-of-type {
+		padding-right: 0;
+	}
+
+	header p {
+		padding-right: 1.5rem;
+	}
+
+	.col {
+		max-width: calc(100%/3);
+	}
+
+	footer {
+		padding: 0 2rem 0 2rem;
+	}
 }
