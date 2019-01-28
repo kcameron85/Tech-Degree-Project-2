@@ -17,7 +17,7 @@
 	line-height: 1.5;
 }
 
-.clearfix:after {
+.clearfix::after {
 	content:"";
 	display:table;
 	clear: both;
@@ -35,6 +35,10 @@ img {
 /*Header Styles*/
 /*================================*/
 
+header {
+	padding: 1rem 0 2.75rem 0;
+}
+
 header, footer { /*Also styles footer element*/
 	background-color: #fafafa;
 }
@@ -42,11 +46,11 @@ header, footer { /*Also styles footer element*/
 .header-wrapper,
 .main-wrapper,
 .footer-wrapper { /*Also styles main and footer element*/
-	margin: 0 1rem;
+	margin: 0 1.25rem;
 }
 
 h1 {
-	padding: 1rem;
+	padding-bottom: 1rem;
 }
 
 .main-nav li {
@@ -71,10 +75,6 @@ footer li {
 header img {
 	width: 75%;
 	padding: 2.5rem 0 1.75rem 0;
-}
-
-header p {
-	padding: 0 0 2.5rem 0;
 }
 
 /*================================*/
@@ -136,19 +136,98 @@ footer p {
 	border-top: 1px solid #e7e7e7;
 }
 
-.footer-nav li {
+.mobile-nav {
 	display: inline-block;
-	text-align: left;
+}
+
+.desktop-nav {
+	display: none;
+}
+
+.footer-nav ul:first-of-type {
 	float: left;
+	text-align: left;
 	width: 50%;
 }
 
-.footer-nav li:last-of-type {
+.footer-nav ul:last-of-type {
+	float: right;
 	text-align: right;
+	width: 50%;
 }
 
-.footer-nav li a {
+.footer-nav li a{
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #000;
+}
+
+
+/*================================*/
+/*Media Queries*/
+/*================================*/
+
+@media (min-width: 768px) {
+
+	h1 {
+		padding-bottom: 0;
+	}
+
+	.main-nav {
+		padding-bottom: 2rem;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		padding: .625rem 1rem;
+		background-color: transparent;
+	}
+
+	header {
+		padding: 2rem 0 3.25rem 0;
+	}
+
+	header img {
+		float: right;
+		max-width: 40%;
+		padding: 0 0 0 .625rem;
+	}
+
+	header p {
+		float: right;
+		max-width: 60%;
+		text-align: start;
+	}
+
+	.main-wrapper {
+		margin: 0 .625rem;
+	}
+
+	.col {
+		float: left;
+		max-width: 50%;
+	}
+
+	.col img {
+		padding: 0 .625rem;
+	}
+
+	.mobile-nav {
+		display: none;
+	}
+
+	.desktop-nav {
+		display: inline-block;
+		padding: 0 .25rem;
+	}
+
+	footer p {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.footer-nav .desktop-nav:last-of-type {
+		padding-right: 0;
+	}
+
 }
