@@ -242,11 +242,15 @@ footer p {
 
 	.col {
 		float: left;
-		max-width: 50%;
+		max-width: calc(100%/2);
 	}
 
 	.col img {
 		padding: 0 .625rem;
+	}
+
+	.col p {
+		min-height: 6.25rem;
 	}
 
 	.mobile-nav {
